@@ -1,0 +1,66 @@
+command		op
+1					get door
+2					get hvac
+3					get hvac-power
+4					get weather
+5					get internal-humidity
+6					get external-humidity
+7					get internal-temp
+8					get external-temp
+9					get floor-temp
+11					get min-temp
+12					get des-temp
+'r'	o 114	get room
+10				set door
+20				set hvac
+30				set hvac-power
+40				set weather
+50				set internal-humidity
+60				set external-humidity
+70				set internal-temp
+80				set external-temp
+90				set floor-temp
+110				set min-temp
+120				set des-temp
+'R' o 82	set room
+'e' o 101	exit
+'s' o 115 start
+'t' o 116 stop
+'p' o 112 printhd			print home data
+
+per room:
+sub_command			op
+1								get presence
+2								get power
+3								get window
+4								get light
+5								get name
+10							set presence
+20							set power
+30							set window
+40							set light
+50							set name
+
+per room:
+room_command		op
+0								room 0
+1								room 1
+2								room 2
+3								room 3
+4								room 4
+.								.
+.								.
+.								.
+n								room n
+
+per window e light:
+number_command	op
+0								number 0
+1								number 1
+2								number 2
+3								number 3
+4								number 4
+.								.
+.								.
+.								.
+n								number n
